@@ -82,8 +82,19 @@ git commit -m "Test workflow"
 git push
 Visit the Actions tab in your GitHub repository to see the workflow run and check the Jest test results.
 
+Screenshots
+1. CLI Installation and Authentication:
+CLI Installation: ![image](https://github.com/user-attachments/assets/802f1cbc-2774-460e-be9e-4206e5d85d39)
+CLI Authentication: ![image](https://github.com/user-attachments/assets/6841d61b-57d5-4cef-8230-62c6afeb4fdb)
+
+2. Passing Tests:
+Passing Tests:
+3. Failing Tests:
+Failing Tests:
+
 Challenges Faced
 Permission Denied Error: While running Jest tests in the workflow, I encountered a "Permission denied" error. This was resolved by ensuring that the necessary permissions were granted to the Node modules directory using the chmod +x command.
+
 Conclusion
 This project successfully demonstrates the integration of GitHub CLI, Jest, and GitHub Actions to automate testing workflows. The workflow runs Jest tests on every push to the main branch, ensuring that tests are always up-to-date and pass successfully.
 
