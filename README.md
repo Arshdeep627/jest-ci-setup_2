@@ -88,9 +88,9 @@ CLI Installation: ![image](https://github.com/user-attachments/assets/802f1cbc-2
 CLI Authentication: ![image](https://github.com/user-attachments/assets/6841d61b-57d5-4cef-8230-62c6afeb4fdb)
 
 2. Passing Tests:
-Passing Tests:
-3. Failing Tests:
-Failing Tests:
+Passing Tests: ![image](https://github.com/user-attachments/assets/6dbc362a-c558-436f-b1a0-db01530b101b)
+               ![image](https://github.com/user-attachments/assets/c152d8f5-3aff-46e7-9689-bc571754a7ed)
+
 
 Challenges Faced
 Permission Denied Error: While running Jest tests in the workflow, I encountered a "Permission denied" error. This was resolved by ensuring that the necessary permissions were granted to the Node modules directory using the chmod +x command.
