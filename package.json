@@ -3,14 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "test": "jest"
-}
-,
-  "keywords": [],
-  "author": "",
+    "test": "jest"
+  },
+  "keywords": ["jest", "ci", "testing"],
+  "author": "Arshdeep Singh",
   "license": "ISC",
-  "description": "",
+  "description": "A simple project setup to demonstrate Jest CI testing with GitHub Actions.",
   "devDependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arshdeep627/jest_ci_setup_2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/jest_ci_setup_2/issues"
+  },
+  "homepage": "https://github.com/yourusername/jest_ci_setup_2#readme"
 }
