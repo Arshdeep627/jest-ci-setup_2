@@ -14,5 +14,9 @@ jobs:
         with:
           node-version: '16'
       - run: npm install
-      - run: chmod +x ./node_modules/.bin/jest 
+      - run: chmod +x ./node_modules/.bin/jest
       - run: npm test
+      - name: Notify on success
+        if: success()  
+        run: echo "All tests passed!"
+
