@@ -98,3 +98,48 @@ Permission Denied Error: While running Jest tests in the workflow, I encountered
 Conclusion
 This project successfully demonstrates the integration of GitHub CLI, Jest, and GitHub Actions to automate testing workflows. The workflow runs Jest tests on every push to the main branch, ensuring that tests are always up-to-date and pass successfully.
 
+
+## Extended Features and Enhancements  
+
+### Extended Tests  
+In addition to the basic tests for addition and subtraction, I have added the following tests to ensure the functionality of the project is robust and comprehensive:  
+
+```javascript
+// Multiply test
+test('multiplies 3 * 4 to equal 12', () => {
+  expect(3 * 4).toBe(12);
+});
+
+// Divide test
+test('divides 10 / 2 to equal 5', () => {
+  expect(10 / 2).toBe(5);
+});
+
+// Square root test
+test('square root of 16 to equal 4', () => {
+  expect(Math.sqrt(16)).toBe(4);
+});
+
+These tests ensure that the project's functionality is versatile and can handle a variety of mathematical operations.
+
+Success Message in GitHub Actions Workflow
+To enhance the feedback mechanism in the CI/CD workflow, I added a step to notify when all tests pass successfully. The following code snippet was included in the workflow:
+
+- name: Notify on success
+  if: success()
+  run: echo "All tests passed!"
+
+This addition ensures that contributors and maintainers are immediately informed of successful test runs, improving the overall user experience during development.
+
+Publishing to npm
+The project was successfully published to npm, making it accessible to the developer community. You can find the published package at the following link:
+[Insert npm Package URL]
+
+To install the package, use the following command:
+     npm install <package-name>
+
+This step marks a significant milestone in the project, allowing developers to integrate it seamlessly into their own projects.
+
+Conclusion
+With these enhancements, the project is now more comprehensive, user-friendly, and accessible. From automated testing with GitHub Actions to publishing on npm, this project demonstrates the power of automation and collaboration in modern software development.
+
